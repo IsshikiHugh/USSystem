@@ -1,0 +1,29 @@
+Particle:
+  center_pos: # Write down the center coordinates (x,y,z) one by one below.
+    - 0.0 # x
+    - 0.0 # y
+    - 9.0 # z
+  V: 0.0001 # The volume of the particle.
+  rho: 500.29 # Density of the particle's material.
+  v_sound: 340000.0 # Sonic in this material.
+
+TransPlain:
+  lt_pos: # Write down the left top coordinates (x,y,z) one by one below.
+    - -5.0 # x
+    - -5.0 # y
+    - 0.0 # z
+  n_x: 20 # Number of transducers alone x-axis.
+  n_y: 20 # Number of transducers alone y-axis.
+  step_x: 0.5 # Separation distance of transducers alone x-axis.
+  step_y: 0.5 # Separation distance of transducers alone y-axis.
+  frequency: 40000 # The frequency of the transducers.
+  p0: 12.3 # Constant defined by the power.
+  rho: 1.29 # Density of the 'air' material.
+  v_sound: 340000.0 # Sonic in this material.
+
+ScanSpace:
+  space_shape: # Write down the shape of the scan space below.
+    - 0.8 # x length
+    - 0.8 # y length
+    - 20.0 # z length
+  line_density: 0.2 # The sampling density in 1-d.
